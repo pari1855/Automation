@@ -5,6 +5,9 @@ public class InterfacesConstructor extends Parent1 {
 				b=35;
 				System.out.println("Child class constructor here: "+a+b);
 				}
+		public void child() {
+			System.out.println("I am child method");
+		}
 	public static void main(String[] args) {
 		//Interface implementation by object:
 		/*SuperParent obj = new SuperParent() {
@@ -18,6 +21,9 @@ public class InterfacesConstructor extends Parent1 {
 		obj.display();
 		*/
 		Parent1 pObj = new InterfacesConstructor(10, 30);
+		pObj.display();
+		pObj.add();
+		
 		
 	}
 
